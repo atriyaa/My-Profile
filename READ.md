@@ -4,15 +4,15 @@ Repositori ini memuat berkas portofolio biodata interaktif dan modern yang diban
 
 👤 Identitas Ringkas
 
-Nama Lengkap: Umar Mansyur (Umar)
+Nama Lengkap: Anisa Triyana (anis)
 
-NIM: 20240018
+NIM: 2024520034
 
-Program Studi: Teknik Informatika — Universitas Madura (UNIRA)
+Program Studi: Informatika — Universitas Madura (UNIRA)
 
 Lokasi: Pamekasan, Jawa Timur
 
-Kontak Email: 20240018@unira.ac.id
+Kontak Email: anstryna46@gmail.com
 
 🔗 Tautan Penting
 
