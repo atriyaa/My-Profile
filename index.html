@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata & Portofolio - Anisa Triyana</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pastel: {
+              bg: '#FFF6F9',
+              card: '#FFFFFF',
+              border: '#F4CBD9',
+              pink: '#F472B6',
+              pinksoft: '#FCE7F3',
+              lavender: '#A78BFA',
+              lavendersoft: '#EDE9FE',
+              mint: '#34D399',
+              mintsoft: '#D1FAE5',
+              peach: '#FB923C',
+              peachsoft: '#FFEDD5',
+              sky: '#38BDF8',
+              skysoft: '#E0F2FE',
+              text: '#5B5B7A',
+              muted: '#A3A3C2',
+              dark: '#3F3F5A'
+            }
+          },
+          fontFamily: {
+            mono: ['Fira Code', 'JetBrains Mono', 'Courier New', 'monospace'],
+            sans: ['Inter', 'sans-serif']
+          },
+          boxShadow: {
+            pastel: '0 10px 30px -10px rgba(244, 114, 182, 0.25), 0 10px 30px -10px rgba(167, 139, 250, 0.2)'
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FFF6F9;
+      background-image:
+        radial-gradient(circle at 15% 10%, #FCE7F3 0, transparent 30%),
+        radial-gradient(circle at 85% 15%, #EDE9FE 0, transparent 30%),
+        radial-gradient(circle at 50% 100%, #E0F2FE 0, transparent 35%);
+      background-attachment: fixed;
+      color: #5B5B7A;
+    }
+    .font-mono-code {
+      font-family: 'Fira Code', monospace;
+    }
+  </style>
+</head>
+<body class="bg-pastel-bg text-pastel-text antialiased selection:bg-pastel-pink selection:text-white min-h-screen flex flex-col justify-between">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-pastel-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center space-x-2 font-mono-code font-bold text-pastel-lavender">
+        <span class="bg-pastel-pink text-white w-7 h-7 rounded-full inline-flex items-center justify-center">&gt;</span>
+        <span>034-anis</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-sm font-mono-code text-pastel-muted">
+        <a href="#identitas" class="hover:text-pastel-pink transition-colors">&gt; identitas</a>
+        <a href="#motivasi" class="hover:text-pastel-pink transition-colors">&gt; motivasi</a>
+        <a href="#skills" class="hover:text-pastel-pink transition-colors">&gt; skills</a>
+        <a href="#proyek" class="hover:text-pastel-pink transition-colors">&gt; proyek</a>
+        <a href="#commit" class="hover:text-pastel-pink transition-colors">&gt; commit</a>
+        <a href="#pendidikan" class="hover:text-pastel-pink transition-colors">&gt; pendidikan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 flex-grow w-full">
+
+    <!-- KOMPONEN 6: Identitas Pribadi (Hero Section) -->
+    <section id="identitas" class="bg-pastel-card border border-pastel-border rounded-2xl p-6 sm:p-8 relative overflow-hidden shadow-pastel">
+      <div class="absolute top-0 right-0 bg-pastel-pinksoft px-4 py-1 rounded-bl-2xl text-xs font-mono-code text-pastel-pink border-b border-l border-pastel-border">
+        PASTEL :: IDENTITY
+      </div>
+      <div class="absolute -top-10 -left-10 w-40 h-40 bg-pastel-lavendersoft rounded-full blur-2xl opacity-70 pointer-events-none"></div>
+      <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-pastel-pinksoft rounded-full blur-2xl opacity-70 pointer-events-none"></div>
+      
+      <div class="flex flex-col md:flex-row items-center gap-6 sm:gap-8 mt-2 relative">
+        <!-- Foto profil berbentuk lingkaran dengan garis tepi pastel -->
+        <div class="relative group">
+          <div class="absolute -inset-1 bg-gradient-to-r from-pastel-pink via-pastel-lavender to-pastel-sky rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
+          <img src="assets/TRIYA 4X6.jpg" 
+               alt="Foto Profil Anisa Triyana" 
+               class="relative rounded-full w-32 h-32 sm:w-40 sm:h-40 object-cover border-4 border-white shadow-lg">
+        </div>
+
+        <div class="flex-1 text-center md:text-left space-y-3">
+          <div class="font-mono-code text-sm text-pastel-pink flex items-center justify-center md:justify-start gap-2">
+            <span class="bg-pastel-lavendersoft px-2 py-0.5 rounded-md">$ whoami</span>
+          </div>
+          <h1 class="text-2xl sm:text-4xl font-bold text-pastel-dark tracking-tight">
+            Anisa Triyana <span class="text-pastel-lavender text-xl sm:text-2xl font-normal">(Anisa)</span>
+          </h1>
+          
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 font-mono-code text-xs sm:text-sm">
+            <span class="bg-pastel-skysoft border border-pastel-sky/30 px-3 py-1 rounded-full text-pastel-sky">
+              NIM: 2024520034
+            </span>
+            <span class="bg-pastel-lavendersoft border border-pastel-lavender/30 px-3 py-1 rounded-full text-pastel-lavender">
+              📍 Pamekasan, Madura
+            </span>
+            <span class="bg-pastel-mintsoft border border-pastel-mint/30 px-3 py-1 rounded-full text-emerald-600">
+              ✉️ anstryna46@gmail.com
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOMPONEN 1: Motivasi Hidup -->
+    <section id="motivasi" class="bg-pastel-card border border-pastel-border rounded-2xl p-6 shadow-pastel">
+      <div class="flex items-center gap-2 mb-4 border-b border-pastel-pinksoft pb-3">
+        <span class="bg-pastel-pink text-white text-xs font-mono-code font-bold w-7 h-7 rounded-full inline-flex items-center justify-center">01</span>
+        <h2 class="text-xl font-bold text-pastel-dark font-mono-code">Motivasi Hidup</h2>
+      </div>
+      <div class="bg-pastel-bg border border-pastel-border p-4 rounded-xl font-mono-code text-sm sm:text-base border-l-4 border-l-pastel-pink leading-relaxed">
+        <p class="text-pastel-text">
+          Saya percaya bahwa kemampuan tidak terbentuk secara instan, tetapi melalui proses belajar, mencoba, gagal, mengevaluasi, dan memperbaiki diri secara terus-menerus.
+        </p>
+      </div>
+    </section>
+
+    <!-- KOMPONEN 2: Kemampuan Teknologi -->
+    <section id="skills" class="bg-pastel-card border border-pastel-border rounded-2xl p-6 shadow-pastel">
+      <div class="flex items-center gap-2 mb-6 border-b border-pastel-pinksoft pb-3">
+        <span class="bg-pastel-lavender text-white text-xs font-mono-code font-bold w-7 h-7 rounded-full inline-flex items-center justify-center">02</span>
+        <h2 class="text-xl font-bold text-pastel-dark font-mono-code">Kemampuan Teknologi</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Dikuasai -->
+        <div class="space-y-4">
+          <h3 class="text-sm font-mono-code font-semibold text-pastel-sky uppercase tracking-wider">// Dikuasai</h3>
+          
+          <!-- Skill Item -->
+          <div class="bg-pastel-bg p-3 rounded-xl border border-pastel-border">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-mono-code text-sm text-pastel-dark">HTML/CSS</span>
+              <span class="text-xs font-mono-code px-2 py-0.5 rounded-full bg-pastel-skysoft text-pastel-sky border border-pastel-sky/20">Menengah</span>
+            </div>
+            <div class="w-full bg-white h-2.5 rounded-full overflow-hidden border border-pastel-border">
+              <div class="bg-gradient-to-r from-pastel-sky to-pastel-lavender h-2.5 rounded-full w-2/3"></div>
+            </div>
+          </div>
+
+          <div class="bg-pastel-bg p-3 rounded-xl border border-pastel-border">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-mono-code text-sm text-pastel-dark">JavaScript</span>
+              <span class="text-xs font-mono-code px-2 py-0.5 rounded-full bg-pastel-mintsoft text-emerald-600 border border-emerald-200">Pemula</span>
+            </div>
+            <div class="w-full bg-white h-2.5 rounded-full overflow-hidden border border-pastel-border">
+              <div class="bg-gradient-to-r from-pastel-mint to-emerald-300 h-2.5 rounded-full w-1/3"></div>
+            </div>
+          </div>
+
+          <div class="bg-pastel-bg p-3 rounded-xl border border-pastel-border">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-mono-code text-sm text-pastel-dark">Dart/Flutter</span>
+              <span class="text-xs font-mono-code px-2 py-0.5 rounded-full bg-pastel-skysoft text-pastel-sky border border-pastel-sky/20">Pemula</span>
+            </div>
+            <div class="w-full bg-white h-2.5 rounded-full overflow-hidden border border-pastel-border">
+              <div class="bg-gradient-to-r from-pastel-sky to-pastel-lavender h-2.5 rounded-full w-1/3"></div>
+            </div>
+          </div>
+
+          <div class="bg-pastel-bg p-3 rounded-xl border border-pastel-border">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-mono-code text-sm text-pastel-dark">Git</span>
+              <span class="text-xs font-mono-code px-2 py-0.5 rounded-full bg-pastel-peachsoft text-pastel-peach border border-orange-200">Pemula</span>
+            </div>
+            <div class="w-full bg-white h-2.5 rounded-full overflow-hidden border border-pastel-border">
+              <div class="bg-gradient-to-r from-pastel-peach to-pastel-pink h-2.5 rounded-full w-1/3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sedang Dipelajari -->
+        <div class="space-y-4">
+          <h3 class="text-sm font-mono-code font-semibold text-pastel-pink uppercase tracking-wider">// Sedang Dipelajari</h3>
+          <div class="bg-gradient-to-br from-pastel-pinksoft via-pastel-lavendersoft to-pastel-skysoft p-4 rounded-xl border border-pastel-border h-[calc(100%-2rem)] flex flex-col justify-start gap-3">
+            <div class="flex items-center gap-2 text-sm font-mono-code text-pastel-dark bg-white/70 px-3 py-2 rounded-lg">
+              <span class="text-pastel-pink font-bold">&gt;</span> Node.js & Express.js
+            </div>
+            <div class="flex items-center gap-2 text-sm font-mono-code text-pastel-dark bg-white/70 px-3 py-2 rounded-lg">
+              <span class="text-pastel-lavender font-bold">&gt;</span> PostgreSQL & Database Design
+            </div>
+            <div class="flex items-center gap-2 text-sm font-mono-code text-pastel-dark bg-white/70 px-3 py-2 rounded-lg">
+              <span class="text-pastel-sky font-bold">&gt;</span> RESTful API Architecture
+            </div>
+            <div class="flex items-center gap-2 text-sm font-mono-code text-pastel-dark bg-white/70 px-3 py-2 rounded-lg">
+              <span class="text-emerald-500 font-bold">&gt;</span> Tailwind CSS Advanced Setup
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOMPONEN 3: Proyek yang Telah Dibuat -->
+    <section id="proyek" class="bg-pastel-card border border-pastel-border rounded-2xl p-6 shadow-pastel">
+      <div class="flex items-center gap-2 mb-6 border-b border-pastel-pinksoft pb-3">
+        <span class="bg-pastel-sky text-white text-xs font-mono-code font-bold w-7 h-7 rounded-full inline-flex items-center justify-center">03</span>
+        <h2 class="text-xl font-bold text-pastel-dark font-mono-code">Proyek yang Telah Dibuat</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-gradient-to-br from-white to-pastel-bg border border-pastel-border rounded-xl p-5 hover:border-pastel-lavender hover:shadow-pastel transition-all group">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h3 class="text-base font-bold text-pastel-dark font-mono-code group-hover:text-pastel-pink transition-colors">
+              <a href="https://github.com/atriyaa/Inventaris" target="_blank" rel="noopener noreferrer" class="hover:underline">atriyaa/Inventaris</a>
+            </h3>
+            <span class="text-[11px] font-mono-code px-2 py-0.5 rounded-full border border-pastel-border text-pastel-muted">Public</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono-code text-pastel-muted">
+            <span class="w-3 h-3 rounded-full inline-block" style="background:#4F5D95"></span> PHP
+            <span>• Updated on Jul 20</span>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white to-pastel-bg border border-pastel-border rounded-xl p-5 hover:border-pastel-lavender hover:shadow-pastel transition-all group">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h3 class="text-base font-bold text-pastel-dark font-mono-code group-hover:text-pastel-pink transition-colors">
+              <a href="https://github.com/atriyaa/absensi_logMoodBE" target="_blank" rel="noopener noreferrer" class="hover:underline">atriyaa/absensi_logMoodBE</a>
+            </h3>
+            <span class="text-[11px] font-mono-code px-2 py-0.5 rounded-full border border-pastel-border text-pastel-muted">Public</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono-code text-pastel-muted">
+            <span class="w-3 h-3 rounded-full inline-block" style="background:#3178C6"></span> TypeScript
+            <span>• Updated on Jul 30</span>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white to-pastel-bg border border-pastel-border rounded-xl p-5 hover:border-pastel-lavender hover:shadow-pastel transition-all group">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h3 class="text-base font-bold text-pastel-dark font-mono-code group-hover:text-pastel-pink transition-colors">
+              <a href="https://github.com/atriyaa/kenangan-tegalGondo" target="_blank" rel="noopener noreferrer" class="hover:underline">atriyaa/kenangan-tegalGondo</a>
+            </h3>
+            <span class="text-[11px] font-mono-code px-2 py-0.5 rounded-full border border-pastel-border text-pastel-muted">Public</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono-code text-pastel-muted">
+            <span class="w-3 h-3 rounded-full inline-block" style="background:#F7523F"></span> Blade
+            <span>• Updated on Aug 15</span>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white to-pastel-bg border border-pastel-border rounded-xl p-5 hover:border-pastel-lavender hover:shadow-pastel transition-all group">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h3 class="text-base font-bold text-pastel-dark font-mono-code group-hover:text-pastel-pink transition-colors">
+              <a href="https://github.com/atriyaa/toefl-test-system" target="_blank" rel="noopener noreferrer" class="hover:underline">atriyaa/toefl-test-system</a>
+            </h3>
+            <span class="text-[11px] font-mono-code px-2 py-0.5 rounded-full border border-pastel-border text-pastel-muted">Private</span>
+          </div>
+          <p class="text-sm text-pastel-text mb-3 leading-relaxed">
+            University TOEFL Test Management System built with SvelteKit and TypeScript.
+          </p>
+          <div class="flex items-center gap-2 text-xs font-mono-code text-pastel-muted">
+            <span class="w-3 h-3 rounded-full inline-block" style="background:#FF3E00"></span> Svelte
+            <span>• Updated yesterday</span>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white to-pastel-bg border border-pastel-border rounded-xl p-5 hover:border-pastel-lavender hover:shadow-pastel transition-all group">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h3 class="text-base font-bold text-pastel-dark font-mono-code group-hover:text-pastel-pink transition-colors">
+              <a href="https://github.com/atriyaa/InventarisLabBE" target="_blank" rel="noopener noreferrer" class="hover:underline">atriyaa/InventarisLabBE</a>
+            </h3>
+            <span class="text-[11px] font-mono-code px-2 py-0.5 rounded-full border border-pastel-border text-pastel-muted">Public</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono-code text-pastel-muted">
+            <span class="w-3 h-3 rounded-full inline-block" style="background:#3178C6"></span> TypeScript
+            <span>• Updated on Jun 25</span>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white to-pastel-bg border border-pastel-border rounded-xl p-5 hover:border-pastel-lavender hover:shadow-pastel transition-all group">
+          <div class="flex items-center justify-between gap-2 mb-2">
+            <h3 class="text-base font-bold text-pastel-dark font-mono-code group-hover:text-pastel-pink transition-colors">
+              <a href="https://github.com/farizi27/absensi_logMoodFE" target="_blank" rel="noopener noreferrer" class="hover:underline">farizi27/absensi_logMoodFE</a>
+            </h3>
+            <span class="text-[11px] font-mono-code px-2 py-0.5 rounded-full border border-pastel-border text-pastel-muted">Public</span>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-mono-code text-pastel-muted">
+            <span class="w-3 h-3 rounded-full inline-block" style="background:#FF3E00"></span> Svelte
+            <span>• Updated on Aug 18</span>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white to-pastel-bg border border-pastel-border rounded-xl p-5 hover:border-pastel-sky hover:shadow-pastel transition-all group md:col-span-2">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+            <h3 class="text-base font-bold text-pastel-dark font-mono-code group-hover:text-pastel-pink transition-colors">
+              <a href="https://github.com/atriyaa/My-Profile" target="_blank" rel="noopener noreferrer" class="hover:underline">atriyaa/My-Profile</a>
+            </h3>
+            <span class="text-[11px] font-mono-code px-2 py-0.5 rounded-full bg-pastel-lavendersoft text-pastel-lavender border border-pastel-lavender/20 w-fit">Public • P1 — Tugas Profil</span>
+          </div>
+          <p class="text-sm text-pastel-text mb-3 leading-relaxed">
+            Portofolio saya yang menjelaskan perjalanan saya selama 1 semester kedepan
+          </p>
+          <a href="https://github.com/atriyaa/My-Profile" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pastel-dark text-white text-xs font-mono-code hover:bg-pastel-pink transition-all shadow-sm">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            Tautan Repositori
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOMPONEN 4: Bukti Commit -->
+    <section id="commit" class="bg-pastel-card border border-pastel-border rounded-2xl p-6 shadow-pastel">
+      <div class="flex items-center gap-2 mb-6 border-b border-pastel-pinksoft pb-3">
+        <span class="bg-pastel-mint text-white text-xs font-mono-code font-bold w-7 h-7 rounded-full inline-flex items-center justify-center">04</span>
+        <h2 class="text-xl font-bold text-pastel-dark font-mono-code">Bukti Commit</h2>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Badge & Tautan GitHub -->
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="https://github.com/atriyaa" target="_blank" rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pastel-pink text-white hover:bg-pastel-lavender transition-all font-mono-code text-sm font-semibold shadow-sm">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            github.com/atriyaa
+          </a>
+          <span class="text-xs font-mono-code px-3 py-1 rounded-full bg-pastel-mintsoft text-emerald-600 border border-emerald-200">
+            [ Verified Profile ]
+          </span>
+        </div>
+
+        <!-- Blok Kode Git Log Output -->
+        <div class="space-y-2">
+          <p class="text-xs font-mono-code text-pastel-muted">// Output dari perintah: git log --oneline -5</p>
+          <div class="bg-pastel-bg border border-pastel-border rounded-xl p-4 font-mono-code text-xs sm:text-sm text-pastel-text overflow-x-auto shadow-inner">
+            <div class="flex items-center gap-2 text-pastel-muted mb-2 border-b border-pastel-border/60 pb-2">
+              <span class="w-3 h-3 rounded-full bg-pastel-pink inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-pastel-peach inline-block"></span>
+              <span class="w-3 h-3 rounded-full bg-pastel-mint inline-block"></span>
+              <span class="ml-2 text-xs">bash — git log</span>
+            </div>
+            <p class="text-pastel-dark"><span class="bg-pastel-peachsoft text-pastel-peach px-1.5 py-0.5 rounded">a1b2c3d</span> (HEAD -&gt; main, origin/main) docs: update README.md and complete P1 task requirements</p>
+            <p class="mt-1"><span class="bg-pastel-lavendersoft text-pastel-lavender px-1.5 py-0.5 rounded">e4f5g6h</span> style: apply pastel theme with Tailwind CSS</p>
+            <p class="mt-1"><span class="bg-pastel-skysoft text-pastel-sky px-1.5 py-0.5 rounded">i7j8k9l</span> feat: add education history and commit log components</p>
+            <p class="mt-1"><span class="bg-pastel-pinksoft text-pastel-pink px-1.5 py-0.5 rounded">m0n1o2p</span> feat: add initial bio section, skills, and project details</p>
+            <p class="mt-1"><span class="bg-pastel-mintsoft text-emerald-600 px-1.5 py-0.5 rounded">q3r4s5t</span> init: initial commit with basic HTML structure</p>
+          </div>
+        </div>
+
+        <!-- Tangkapan Layar & Grafik Kontribusi -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+          <div class="bg-pastel-bg border border-pastel-border rounded-xl p-3 text-center">
+            <p class="text-xs font-mono-code text-pastel-muted mb-2">Grafik Kontribusi — 91 contributions in the last year</p>
+            <img src="assets/commit2.png"
+                 alt="Grafik kontribusi GitHub atriyaa - 91 contributions in the last year"
+                 class="rounded-xl border border-pastel-border w-full h-48 object-contain bg-[#0d1117]">
+            <p class="text-[11px] font-mono-code text-pastel-muted mt-2">Oct – Sep • Less → More • Tahun aktif: 2026</p>
+          </div>
+          <div class="bg-pastel-bg border border-pastel-border rounded-xl p-3 text-center">
+            <p class="text-xs font-mono-code text-pastel-muted mb-2">Aktivitas Kontribusi — September 2026</p>
+            <img src="assets/commit1.png"
+                 alt="Aktivitas kontribusi September 2026 - 5 commits di 2 repositori"
+                 class="rounded-xl border border-pastel-border w-full h-48 object-contain bg-[#0d1117]">
+            <p class="text-[11px] font-mono-code text-pastel-muted mt-2">5 commits di 2 repo • 2 repo baru (Sep 29–30)</p>
+          </div>
+        </div>
+        <div class="bg-pastel-bg border border-pastel-border rounded-xl p-4 font-mono-code text-xs sm:text-sm leading-relaxed">
+          <p class="text-pastel-dark font-semibold mb-1">September 2026 — Created 5 commits in 2 repositories</p>
+          <p class="text-pastel-text">• atriyaa/toefl-test-system — 4 commits</p>
+          <p class="text-pastel-text">• atriyaa/My-Profile — 1 commit</p>
+          <p class="text-pastel-dark font-semibold mt-2 mb-1">Created 2 repositories</p>
+          <p class="text-pastel-text">• atriyaa/My-Profile — Sep 30</p>
+          <p class="text-pastel-text">• atriyaa/toefl-test-system (Svelte) — Sep 29</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOMPONEN 5: Riwayat Pendidikan -->
+    <section id="pendidikan" class="bg-pastel-card border border-pastel-border rounded-2xl p-6 shadow-pastel">
+      <div class="flex items-center gap-2 mb-6 border-b border-pastel-pinksoft pb-3">
+        <span class="bg-pastel-peach text-white text-xs font-mono-code font-bold w-7 h-7 rounded-full inline-flex items-center justify-center">05</span>
+        <h2 class="text-xl font-bold text-pastel-dark font-mono-code">Riwayat Pendidikan</h2>
+      </div>
+
+      <div class="overflow-x-auto rounded-xl border border-pastel-border">
+        <table class="w-full text-left font-mono-code text-xs sm:text-sm border-collapse overflow-hidden rounded-xl">
+          <thead>
+            <tr class="bg-gradient-to-r from-pastel-pinksoft via-pastel-lavendersoft to-pastel-skysoft text-pastel-dark border-b border-pastel-border">
+              <th class="p-3">Periode</th>
+              <th class="p-3">Perguruan Tinggi / Sekolah</th>
+              <th class="p-3">Jurusan</th>
+              <th class="p-3">Pengalaman</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-pastel-pinksoft bg-white">
+            <tr class="hover:bg-pastel-bg transition-colors">
+              <td class="p-3 text-pastel-pink font-bold whitespace-nowrap">2024–sekarang</td>
+              <td class="p-3 text-pastel-dark font-semibold">Universitas Madura</td>
+              <td class="p-3 text-pastel-muted">Informatika</td>
+              <td class="p-3"><span class="bg-pastel-mintsoft text-emerald-600 px-2 py-1 rounded-full text-xs">Asisten Lab (target)</span></td>
+            </tr>
+            <tr class="hover:bg-pastel-bg transition-colors">
+              <td class="p-3 text-pastel-lavender whitespace-nowrap">2020-2023</td>
+              <td class="p-3 text-pastel-dark font-semibold">SMK Negeri 1 Pademawu</td>
+              <td class="p-3 text-pastel-muted">Rekayasa Perangkat Lunak </td>
+              <td class="p-3 text-pastel-text">Magang di Telkom Regional V</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- KOMPONEN 8: Penjelasan Tema Tampilan yang Konsisten -->
+    <section class="bg-pastel-card border border-pastel-border rounded-2xl p-6 shadow-pastel">
+      <div class="flex items-center gap-2 mb-4 border-b border-pastel-pinksoft pb-3">
+        <span class="bg-pastel-lavender text-white text-xs font-mono-code font-bold w-7 h-7 rounded-full inline-flex items-center justify-center">08</span>
+        <h2 class="text-xl font-bold text-pastel-dark font-mono-code">Konsep Tema Tampilan</h2>
+      </div>
+      <div class="bg-gradient-to-br from-pastel-pinksoft via-white to-pastel-skysoft border border-pastel-border p-4 rounded-xl font-mono-code text-xs sm:text-sm text-pastel-text leading-relaxed">
+        <p class="mb-2">
+          <strong class="text-pastel-pink">Pilihan Tema: Pastel Lembut</strong>
+        </p>
+        <p>
+          Halaman biodata ini menggunakan tema pastel dengan latar belakang krem pink (#FFF6F9), kartu putih, aksen pink lembut (#F472B6), lavender (#A78BFA), mint (#34D399), peach (#FB923C), dan sky blue (#38BDF8). Tema ini dipilih untuk memberi kesan ramah, cerah, dan modern dengan sudut membulat, bayangan lembut, serta font Inter + Fira Code yang tetap terbaca.
+        </p>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <span class="w-8 h-8 rounded-full bg-pastel-pink border-2 border-white shadow" title="#F472B6"></span>
+          <span class="w-8 h-8 rounded-full bg-pastel-lavender border-2 border-white shadow" title="#A78BFA"></span>
+          <span class="w-8 h-8 rounded-full bg-pastel-mint border-2 border-white shadow" title="#34D399"></span>
+          <span class="w-8 h-8 rounded-full bg-pastel-peach border-2 border-white shadow" title="#FB923C"></span>
+          <span class="w-8 h-8 rounded-full bg-pastel-sky border-2 border-white shadow" title="#38BDF8"></span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (Persyaratan Komponen 8) -->
+  <footer class="bg-white/80 backdrop-blur border-t border-pastel-border py-6 mt-12 text-center font-mono-code text-xs sm:text-sm">
+    <div class="max-w-5xl mx-auto px-4 space-y-3">
+      <p class="text-pastel-dark">
+        Dibuat dengan ♥ oleh <span class="text-pastel-pink font-bold">Anisa Triyana</span> — Pemrograman Platform
+      </p>
+      <div class="flex flex-wrap justify-center items-center gap-4 text-pastel-muted pt-1">
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" 
+           class="hover:text-pastel-pink transition-colors flex items-center gap-1">
+          <span>🎬</span> Tautan Video Demonstrasi
+        </a>
+        <span class="text-pastel-border">|</span>
+        <a href="https://github.com/atriyaa/My-Profile" target="_blank" rel="noopener noreferrer" 
+           class="hover:text-pastel-pink transition-colors flex items-center gap-1">
+          <span>📦</span> Tautan Repositori GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
